@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Documentos\Downloads\WeAreDevs_API.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E20BC433-7298-4990-82DB-3429AA239AA2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>WeAreDevs_API</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_003CModule_003E.cs" />
+    <Compile Include="WeAreDevs_API_ProcessedByFody.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="WeAreDevs_API\ExploitAPI.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="costura.metadata" />
+    <EmbeddedResource Include="costura\costura\dll.compressed" />
+    <EmbeddedResource Include="costura\costura\pdb.compressed" />
+    <EmbeddedResource Include="costura\microsoft\bcl\asyncinterfaces\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\abstractions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\configuration\fileextensions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\fileproviders\abstractions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\fileproviders\physical\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\filesystemglobbing\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\extensions\primitives\dll.compressed" />
+    <EmbeddedResource Include="costura\newtonsoft\json\dll.compressed" />
+    <EmbeddedResource Include="costura\system\buffers\dll.compressed" />
+    <EmbeddedResource Include="costura\system\diagnostics\diagnosticsource\dll.compressed" />
+    <EmbeddedResource Include="costura\system\memory\dll.compressed" />
+    <EmbeddedResource Include="costura\system\numerics\vectors\dll.compressed" />
+    <EmbeddedResource Include="costura\system\runtime\compilerservices\unsafe\dll.compressed" />
+    <EmbeddedResource Include="costura\system\text\encodings\web\dll.compressed" />
+    <EmbeddedResource Include="costura\system\threading\tasks\extensions\dll.compressed" />
+    <EmbeddedResource Include="costura\system\valuetuple\dll.compressed" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
